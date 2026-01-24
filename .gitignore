@@ -1,16 +1,7 @@
-# Ignore heavy data files (Synced via OneDrive instead)
-data/**/*.parquet
-data/**/*.pdf
-data/**/*.txt
-data/**/*.csv
-
-# Keep the folder structure!
-# This trick allows the empty folders to exist on GitHub
-!data/**/.gitkeep
-
-# Ignore Python system files
+# ONLY ignore system junk
 __pycache__/
 *.pyc
 venv/
 .env
+.vscode/
 .DS_Store

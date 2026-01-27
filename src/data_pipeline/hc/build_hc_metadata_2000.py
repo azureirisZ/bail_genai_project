@@ -1,56 +1,85 @@
-import pandas as pd
-import fsspec
+import os
+import sys
+import logging
 from tqdm import tqdm
+from datasets import load_dataset
+import pandas as pd
 
 # ---------------- CONFIG ----------------
+DATASET_NAME = "IndianHighCourtJudgments/metadata"  # streaming dataset
 START_YEAR = 2000
-END_YEAR = 2024
+OUT_DIR = "data/raw/hc_metadata_by_year"
+LOG_DIR = "logs"
+# ----------------------------------------
 
-HF_DATASET = "hf://datasets/ExplodingGradients/indian-high-court-judgments/metadata/parquet"
-OUT_FILE = "data/raw/hc_metadata_2000_onwards.parquet"
-# ---------------------------------------
+os.makedirs(OUT_DIR, exist_ok=True)
+os.makedirs(LOG_DIR, exist_ok=True)
 
-fs = fsspec.filesystem("hf")
+logging.basicConfig(
+    filename=os.path.join(LOG_DIR, "hc_metadata_2000.log"),
+    level=logging.INFO,
+    format="%(asctime)s | %(levelname)s | %(message)s",
+)
 
-all_dfs = []
+print("📥 Loading High Court metadata (2000 onwards, streaming mode)...")
+logging.info("Script started")
 
-print("\n📥 Loading High Court metadata (2000 onwards)...\n")
+# ---- helper: check if year already done ----
+def year_done(year):
+    return os.path.exists(os.path.join(OUT_DIR, f"hc_metadata_{year}.parquet"))
 
-for year in tqdm(range(START_YEAR, END_YEAR + 1), desc="Years"):
-    year_path = f"{HF_DATASET}/year={year}"
+# ---- load dataset (STREAMING = SAFE) ----
+dataset = load_dataset(
+    "datasets/indian-high-court-judgments",
+    "metadata",
+    split="train",
+    streaming=True,
+)
 
-    try:
-        parquet_files = fs.glob(f"{year_path}/*.parquet")
+current_year = None
+buffer = []
 
-        if not parquet_files:
+try:
+    for row in tqdm(dataset, desc="Processing cases"):
+        year = int(row.get("decision_year", 0))
+
+        if year < START_YEAR:
             continue
 
-        for pf in parquet_files:
-            try:
-                df = pd.read_parquet(pf)
-                df["year"] = year
-                all_dfs.append(df)
-            except Exception as e:
-                # silently skip corrupted arrow files
-                continue
+        # if year already processed → skip
+        if year_done(year):
+            continue
 
-    except Exception:
-        continue
+        # year boundary crossed → flush previous year
+        if current_year is not None and year != current_year:
+            df = pd.DataFrame(buffer)
+            out_path = os.path.join(OUT_DIR, f"hc_metadata_{current_year}.parquet")
+            df.to_parquet(out_path, index=False)
+            logging.info(f"Saved year {current_year} ({len(df)} rows)")
+            buffer = []
 
-# ---------------- SAFETY ----------------
-if not all_dfs:
-    raise RuntimeError("❌ No High Court parquet files were loaded")
+        current_year = year
+        buffer.append(row)
 
-hc_df = pd.concat(all_dfs, ignore_index=True)
+    # ---- save last year ----
+    if buffer and current_year is not None:
+        df = pd.DataFrame(buffer)
+        out_path = os.path.join(OUT_DIR, f"hc_metadata_{current_year}.parquet")
+        df.to_parquet(out_path, index=False)
+        logging.info(f"Saved year {current_year} ({len(df)} rows)")
 
-# ---------------- SAVE ------------------
-hc_df.to_parquet(OUT_FILE, index=False)
+except KeyboardInterrupt:
+    print("\n🛑 Interrupted safely by user (Ctrl+C)")
+    logging.warning("Script interrupted by user")
 
-print("\n✅ DONE")
-print(f"📦 Saved to: {OUT_FILE}")
-print(f"📊 Total rows: {len(hc_df):,}")
+    if buffer and current_year is not None:
+        df = pd.DataFrame(buffer)
+        out_path = os.path.join(OUT_DIR, f"hc_metadata_{current_year}.parquet")
+        df.to_parquet(out_path, index=False)
+        logging.info(f"Partial save for year {current_year} ({len(df)} rows)")
 
-if "court" in hc_df.columns:
-    print(f"🏛️ High Courts: {hc_df['court'].nunique()}")
+    print(f"💾 Partial data saved for year {current_year}")
+    sys.exit(0)
 
-print(f"📅 Years covered: {hc_df['year'].min()} – {hc_df['year'].max()}")
+print("✅ Done. All available years saved safely.")
+logging.info("Script completed successfully")

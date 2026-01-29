@@ -5,3 +5,5 @@ venv/
 .env
 .vscode/
 .DS_Store
+logs/
+*_BACKUP.py

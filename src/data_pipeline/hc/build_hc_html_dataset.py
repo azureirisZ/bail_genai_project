@@ -1,98 +1,118 @@
-import pandas as pd
-import s3fs
-from tqdm import tqdm
+import os
+import time
+import requests
+import logging
 from pathlib import Path
+from tqdm import tqdm
 
-# ---------------- CONFIG ----------------
-S3_BASE = "indian-high-court-judgments/metadata/parquet"
-YEARS = range(1950, 2024)
+# ---------------- CONFIG ---------------- #
 
-TARGET_COURTS = {
-    "Delhi High Court": "hc_delhi_html.parquet",
-    "Kerala High Court": "hc_kerala_html.parquet",
-    "Madras High Court": "hc_madras_html.parquet",
-    "Bombay High Court": "hc_bombay_html.parquet",
-    "Calcutta High Court": "hc_calcutta_html.parquet",
-    "Allahabad High Court": "hc_allahabad_html.parquet",
-    "Karnataka High Court": "hc_karnataka_html.parquet",
-    "Rajasthan High Court": "hc_rajasthan_html.parquet",
-    "Telangana High Court": "hc_telangana_html.parquet",
-    "Andhra Pradesh High Court": "hc_andhra_html.parquet",
-    "Punjab and Haryana High Court": "hc_punjab_haryana_html.parquet",
+BASE_DIR = Path("data/hc_html")
+LOG_DIR = Path("logs")
+LOG_DIR.mkdir(exist_ok=True)
+
+START_YEAR = 2000
+END_YEAR = 2024
+
+REQUEST_DELAY = 1.5  # seconds (polite scraping)
+
+HEADERS = {
+    "User-Agent": "Mozilla/5.0 (Academic Research Bot)"
 }
 
-OUT_DIR = Path("data/raw")
-OUT_DIR.mkdir(parents=True, exist_ok=True)
+COURTS = {
+    "delhi": {
+        "base_url": "https://delhihighcourt.nic.in/judgments",
+        "query_param": "year"
+    },
+    "madras": {
+        "base_url": "https://www.mhc.tn.gov.in/judis",
+        "query_param": "year"
+    },
+    "kerala": {
+        "base_url": "https://highcourtofkerala.nic.in/judgments",
+        "query_param": "year"
+    }
+}
 
-# --------------------------------------
+# ---------------- LOGGING ---------------- #
 
-fs = s3fs.S3FileSystem(anon=True)
-all_rows = []
+logging.basicConfig(
+    filename=LOG_DIR / "hc_html_scrape.log",
+    level=logging.INFO,
+    format="%(asctime)s - %(levelname)s - %(message)s"
+)
 
-print("\n📥 Loading High Court metadata by year...\n")
+# ---------------- HELPERS ---------------- #
 
-for year in tqdm(YEARS, desc="Years"):
-    s3_path = f"s3://{S3_BASE}/year={year}"
+def safe_request(url, params=None):
     try:
-        df = pd.read_parquet(
-            s3_path,
-            filesystem=fs,
-            engine="pyarrow"
-        )
-
-        if len(df) == 0:
-            continue
-
-        df["year"] = year
-        all_rows.append(df)
-
+        r = requests.get(url, headers=HEADERS, params=params, timeout=15)
+        r.raise_for_status()
+        return r.text
     except Exception as e:
-        print(f"⚠️ Skipped year {year}: {type(e).__name__}")
-        continue
+        logging.warning(f"Request failed: {url} | {e}")
+        return None
 
-# --------- SAFETY CHECK ----------
-if not all_rows:
-    raise RuntimeError(
-        "❌ No High Court data loaded. "
-        "Check S3 path or network connectivity."
-    )
 
-hc_df = pd.concat(all_rows, ignore_index=True)
-print(f"\n✅ Loaded {len(hc_df):,} High Court records")
+def save_html(content, path):
+    path.parent.mkdir(parents=True, exist_ok=True)
+    with open(path, "w", encoding="utf-8") as f:
+        f.write(content)
 
-# ---------- STANDARDIZE ----------
-hc_df.columns = [c.lower() for c in hc_df.columns]
 
-RENAMES = {
-    "court_name": "court",
-    "html_path": "judgment_html_path",
-    "judgement_html_path": "judgment_html_path"
-}
+# ---------------- SCRAPER ---------------- #
 
-for k, v in RENAMES.items():
-    if k in hc_df.columns:
-        hc_df.rename(columns={k: v}, inplace=True)
+def scrape_court_year(court_name, court_cfg, year):
+    """
+    Downloads the judgment listing HTML for a given court + year.
+    """
+    court_dir = BASE_DIR / court_name / str(year)
+    court_dir.mkdir(parents=True, exist_ok=True)
 
-# ---------- FILTER CRIMINAL / BAIL ----------
-KEYWORDS = ["bail", "anticipatory", "criminal", "crl"]
+    out_file = court_dir / "index.html"
 
-def is_relevant(row):
-    text = " ".join([
-        str(row.get("case_title", "")),
-        str(row.get("case_type", "")),
-    ]).lower()
-    return any(k in text for k in KEYWORDS)
+    # Resume support
+    if out_file.exists():
+        logging.info(f"Skipping existing: {out_file}")
+        return True
 
-hc_df = hc_df[hc_df.apply(is_relevant, axis=1)]
-print(f"⚖️ After bail/criminal filter: {len(hc_df):,}")
+    params = {court_cfg["query_param"]: year}
+    html = safe_request(court_cfg["base_url"], params=params)
 
-# ---------- SAVE PER COURT ----------
-for court, filename in TARGET_COURTS.items():
-    subset = hc_df[hc_df["court"] == court]
+    if html is None:
+        logging.error(f"Failed year {year} for {court_name}")
+        return False
 
-    if subset.empty:
-        print(f"⚠️ No data for {court}")
-        continue
+    save_html(html, out_file)
+    time.sleep(REQUEST_DELAY)
+    return True
 
-    path = OUT_DIR / filename
-    subset.to_parquet(path, index=False)
+
+# ---------------- MAIN ---------------- #
+
+def main():
+    print("📥 Starting High Court HTML scraping...")
+    logging.info("=== HC HTML SCRAPE STARTED ===")
+
+    total_tasks = len(COURTS) * (END_YEAR - START_YEAR + 1)
+    completed = 0
+
+    with tqdm(total=total_tasks, desc="Scraping") as pbar:
+        for court_name, cfg in COURTS.items():
+            for year in range(START_YEAR, END_YEAR + 1):
+                try:
+                    ok = scrape_court_year(court_name, cfg, year)
+                    if not ok:
+                        print(f"⚠️ Skipped {court_name} {year}")
+                except Exception as e:
+                    logging.exception(f"Fatal error {court_name} {year}: {e}")
+                completed += 1
+                pbar.update(1)
+
+    logging.info("=== HC HTML SCRAPE FINISHED ===")
+    print("✅ Scraping complete (or safely skipped).")
+
+
+if __name__ == "__main__":
+    main()

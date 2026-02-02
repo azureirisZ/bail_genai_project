@@ -1,0 +1,152 @@
+2026-01-29 11:04:28,442 - INFO - === HC HTML SCRAPE STARTED ===
+2026-01-29 11:04:28,937 - WARNING - Request failed: https://delhihighcourt.nic.in/judgments | 404 Client Error: Not Found for url: https://delhihighcourt.nic.in/judgments?year=2000
+2026-01-29 11:04:28,937 - ERROR - Failed year 2000 for delhi
+2026-01-29 11:04:29,114 - WARNING - Request failed: https://delhihighcourt.nic.in/judgments | 404 Client Error: Not Found for url: https://delhihighcourt.nic.in/judgments?year=2001
+2026-01-29 11:04:29,117 - ERROR - Failed year 2001 for delhi
+2026-01-29 11:04:29,375 - WARNING - Request failed: https://delhihighcourt.nic.in/judgments | 404 Client Error: Not Found for url: https://delhihighcourt.nic.in/judgments?year=2002
+2026-01-29 11:04:29,375 - ERROR - Failed year 2002 for delhi
+2026-01-29 11:04:29,616 - WARNING - Request failed: https://delhihighcourt.nic.in/judgments | 404 Client Error: Not Found for url: https://delhihighcourt.nic.in/judgments?year=2003
+2026-01-29 11:04:29,616 - ERROR - Failed year 2003 for delhi
+2026-01-29 11:04:29,815 - WARNING - Request failed: https://delhihighcourt.nic.in/judgments | 404 Client Error: Not Found for url: https://delhihighcourt.nic.in/judgments?year=2004
+2026-01-29 11:04:29,818 - ERROR - Failed year 2004 for delhi
+2026-01-29 11:04:30,012 - WARNING - Request failed: https://delhihighcourt.nic.in/judgments | 404 Client Error: Not Found for url: https://delhihighcourt.nic.in/judgments?year=2005
+2026-01-29 11:04:30,015 - ERROR - Failed year 2005 for delhi
+2026-01-29 11:04:30,189 - WARNING - Request failed: https://delhihighcourt.nic.in/judgments | 404 Client Error: Not Found for url: https://delhihighcourt.nic.in/judgments?year=2006
+2026-01-29 11:04:30,198 - ERROR - Failed year 2006 for delhi
+2026-01-29 11:04:30,375 - WARNING - Request failed: https://delhihighcourt.nic.in/judgments | 404 Client Error: Not Found for url: https://delhihighcourt.nic.in/judgments?year=2007
+2026-01-29 11:04:30,391 - ERROR - Failed year 2007 for delhi
+2026-01-29 11:04:30,599 - WARNING - Request failed: https://delhihighcourt.nic.in/judgments | 404 Client Error: Not Found for url: https://delhihighcourt.nic.in/judgments?year=2008
+2026-01-29 11:04:30,599 - ERROR - Failed year 2008 for delhi
+2026-01-29 11:04:30,798 - WARNING - Request failed: https://delhihighcourt.nic.in/judgments | 404 Client Error: Not Found for url: https://delhihighcourt.nic.in/judgments?year=2009
+2026-01-29 11:04:30,798 - ERROR - Failed year 2009 for delhi
+2026-01-29 11:04:30,955 - WARNING - Request failed: https://delhihighcourt.nic.in/judgments | 404 Client Error: Not Found for url: https://delhihighcourt.nic.in/judgments?year=2010
+2026-01-29 11:04:30,961 - ERROR - Failed year 2010 for delhi
+2026-01-29 11:04:31,109 - WARNING - Request failed: https://delhihighcourt.nic.in/judgments | 404 Client Error: Not Found for url: https://delhihighcourt.nic.in/judgments?year=2011
+2026-01-29 11:04:31,109 - ERROR - Failed year 2011 for delhi
+2026-01-29 11:04:31,266 - WARNING - Request failed: https://delhihighcourt.nic.in/judgments | 404 Client Error: Not Found for url: https://delhihighcourt.nic.in/judgments?year=2012
+2026-01-29 11:04:31,266 - ERROR - Failed year 2012 for delhi
+2026-01-29 11:04:31,421 - WARNING - Request failed: https://delhihighcourt.nic.in/judgments | 404 Client Error: Not Found for url: https://delhihighcourt.nic.in/judgments?year=2013
+2026-01-29 11:04:31,421 - ERROR - Failed year 2013 for delhi
+2026-01-29 11:04:31,579 - WARNING - Request failed: https://delhihighcourt.nic.in/judgments | 404 Client Error: Not Found for url: https://delhihighcourt.nic.in/judgments?year=2014
+2026-01-29 11:04:31,579 - ERROR - Failed year 2014 for delhi
+2026-01-29 11:04:31,744 - WARNING - Request failed: https://delhihighcourt.nic.in/judgments | 404 Client Error: Not Found for url: https://delhihighcourt.nic.in/judgments?year=2015
+2026-01-29 11:04:31,747 - ERROR - Failed year 2015 for delhi
+2026-01-29 11:04:31,891 - WARNING - Request failed: https://delhihighcourt.nic.in/judgments | 404 Client Error: Not Found for url: https://delhihighcourt.nic.in/judgments?year=2016
+2026-01-29 11:04:31,902 - ERROR - Failed year 2016 for delhi
+2026-01-29 11:04:32,093 - WARNING - Request failed: https://delhihighcourt.nic.in/judgments | 404 Client Error: Not Found for url: https://delhihighcourt.nic.in/judgments?year=2017
+2026-01-29 11:04:32,093 - ERROR - Failed year 2017 for delhi
+2026-01-29 11:04:32,267 - WARNING - Request failed: https://delhihighcourt.nic.in/judgments | 404 Client Error: Not Found for url: https://delhihighcourt.nic.in/judgments?year=2018
+2026-01-29 11:04:32,267 - ERROR - Failed year 2018 for delhi
+2026-01-29 11:04:32,453 - WARNING - Request failed: https://delhihighcourt.nic.in/judgments | 404 Client Error: Not Found for url: https://delhihighcourt.nic.in/judgments?year=2019
+2026-01-29 11:04:32,459 - ERROR - Failed year 2019 for delhi
+2026-01-29 11:04:32,640 - WARNING - Request failed: https://delhihighcourt.nic.in/judgments | 404 Client Error: Not Found for url: https://delhihighcourt.nic.in/judgments?year=2020
+2026-01-29 11:04:32,656 - ERROR - Failed year 2020 for delhi
+2026-01-29 11:04:32,850 - WARNING - Request failed: https://delhihighcourt.nic.in/judgments | 404 Client Error: Not Found for url: https://delhihighcourt.nic.in/judgments?year=2021
+2026-01-29 11:04:32,852 - ERROR - Failed year 2021 for delhi
+2026-01-29 11:04:33,033 - WARNING - Request failed: https://delhihighcourt.nic.in/judgments | 404 Client Error: Not Found for url: https://delhihighcourt.nic.in/judgments?year=2022
+2026-01-29 11:04:33,033 - ERROR - Failed year 2022 for delhi
+2026-01-29 11:04:33,226 - WARNING - Request failed: https://delhihighcourt.nic.in/judgments | 404 Client Error: Not Found for url: https://delhihighcourt.nic.in/judgments?year=2023
+2026-01-29 11:04:33,228 - ERROR - Failed year 2023 for delhi
+2026-01-29 11:04:33,422 - WARNING - Request failed: https://delhihighcourt.nic.in/judgments | 404 Client Error: Not Found for url: https://delhihighcourt.nic.in/judgments?year=2024
+2026-01-29 11:04:33,422 - ERROR - Failed year 2024 for delhi
+2026-01-29 11:04:33,580 - WARNING - Request failed: https://www.mhc.tn.gov.in/judis | HTTPSConnectionPool(host='www.mhc.tn.gov.in', port=443): Max retries exceeded with url: /judis?year=2000 (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1007)')))
+2026-01-29 11:04:33,580 - ERROR - Failed year 2000 for madras
+2026-01-29 11:04:33,609 - WARNING - Request failed: https://www.mhc.tn.gov.in/judis | HTTPSConnectionPool(host='www.mhc.tn.gov.in', port=443): Max retries exceeded with url: /judis?year=2001 (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1007)')))
+2026-01-29 11:04:33,609 - ERROR - Failed year 2001 for madras
+2026-01-29 11:04:33,657 - WARNING - Request failed: https://www.mhc.tn.gov.in/judis | HTTPSConnectionPool(host='www.mhc.tn.gov.in', port=443): Max retries exceeded with url: /judis?year=2002 (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1007)')))
+2026-01-29 11:04:33,657 - ERROR - Failed year 2002 for madras
+2026-01-29 11:04:33,709 - WARNING - Request failed: https://www.mhc.tn.gov.in/judis | HTTPSConnectionPool(host='www.mhc.tn.gov.in', port=443): Max retries exceeded with url: /judis?year=2003 (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1007)')))
+2026-01-29 11:04:33,710 - ERROR - Failed year 2003 for madras
+2026-01-29 11:04:33,734 - WARNING - Request failed: https://www.mhc.tn.gov.in/judis | HTTPSConnectionPool(host='www.mhc.tn.gov.in', port=443): Max retries exceeded with url: /judis?year=2004 (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1007)')))
+2026-01-29 11:04:33,734 - ERROR - Failed year 2004 for madras
+2026-01-29 11:04:33,765 - WARNING - Request failed: https://www.mhc.tn.gov.in/judis | HTTPSConnectionPool(host='www.mhc.tn.gov.in', port=443): Max retries exceeded with url: /judis?year=2005 (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1007)')))
+2026-01-29 11:04:33,765 - ERROR - Failed year 2005 for madras
+2026-01-29 11:04:33,807 - WARNING - Request failed: https://www.mhc.tn.gov.in/judis | HTTPSConnectionPool(host='www.mhc.tn.gov.in', port=443): Max retries exceeded with url: /judis?year=2006 (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1007)')))
+2026-01-29 11:04:33,807 - ERROR - Failed year 2006 for madras
+2026-01-29 11:04:33,843 - WARNING - Request failed: https://www.mhc.tn.gov.in/judis | HTTPSConnectionPool(host='www.mhc.tn.gov.in', port=443): Max retries exceeded with url: /judis?year=2007 (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1007)')))
+2026-01-29 11:04:33,843 - ERROR - Failed year 2007 for madras
+2026-01-29 11:04:33,870 - WARNING - Request failed: https://www.mhc.tn.gov.in/judis | HTTPSConnectionPool(host='www.mhc.tn.gov.in', port=443): Max retries exceeded with url: /judis?year=2008 (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1007)')))
+2026-01-29 11:04:33,870 - ERROR - Failed year 2008 for madras
+2026-01-29 11:04:33,910 - WARNING - Request failed: https://www.mhc.tn.gov.in/judis | HTTPSConnectionPool(host='www.mhc.tn.gov.in', port=443): Max retries exceeded with url: /judis?year=2009 (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1007)')))
+2026-01-29 11:04:33,910 - ERROR - Failed year 2009 for madras
+2026-01-29 11:04:33,936 - WARNING - Request failed: https://www.mhc.tn.gov.in/judis | HTTPSConnectionPool(host='www.mhc.tn.gov.in', port=443): Max retries exceeded with url: /judis?year=2010 (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1007)')))
+2026-01-29 11:04:33,936 - ERROR - Failed year 2010 for madras
+2026-01-29 11:04:33,968 - WARNING - Request failed: https://www.mhc.tn.gov.in/judis | HTTPSConnectionPool(host='www.mhc.tn.gov.in', port=443): Max retries exceeded with url: /judis?year=2011 (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1007)')))
+2026-01-29 11:04:33,968 - ERROR - Failed year 2011 for madras
+2026-01-29 11:04:33,990 - WARNING - Request failed: https://www.mhc.tn.gov.in/judis | HTTPSConnectionPool(host='www.mhc.tn.gov.in', port=443): Max retries exceeded with url: /judis?year=2012 (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1007)')))
+2026-01-29 11:04:33,990 - ERROR - Failed year 2012 for madras
+2026-01-29 11:04:34,016 - WARNING - Request failed: https://www.mhc.tn.gov.in/judis | HTTPSConnectionPool(host='www.mhc.tn.gov.in', port=443): Max retries exceeded with url: /judis?year=2013 (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1007)')))
+2026-01-29 11:04:34,016 - ERROR - Failed year 2013 for madras
+2026-01-29 11:04:34,046 - WARNING - Request failed: https://www.mhc.tn.gov.in/judis | HTTPSConnectionPool(host='www.mhc.tn.gov.in', port=443): Max retries exceeded with url: /judis?year=2014 (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1007)')))
+2026-01-29 11:04:34,046 - ERROR - Failed year 2014 for madras
+2026-01-29 11:04:34,078 - WARNING - Request failed: https://www.mhc.tn.gov.in/judis | HTTPSConnectionPool(host='www.mhc.tn.gov.in', port=443): Max retries exceeded with url: /judis?year=2015 (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1007)')))
+2026-01-29 11:04:34,078 - ERROR - Failed year 2015 for madras
+2026-01-29 11:04:34,119 - WARNING - Request failed: https://www.mhc.tn.gov.in/judis | HTTPSConnectionPool(host='www.mhc.tn.gov.in', port=443): Max retries exceeded with url: /judis?year=2016 (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1007)')))
+2026-01-29 11:04:34,119 - ERROR - Failed year 2016 for madras
+2026-01-29 11:04:34,155 - WARNING - Request failed: https://www.mhc.tn.gov.in/judis | HTTPSConnectionPool(host='www.mhc.tn.gov.in', port=443): Max retries exceeded with url: /judis?year=2017 (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1007)')))
+2026-01-29 11:04:34,155 - ERROR - Failed year 2017 for madras
+2026-01-29 11:04:34,188 - WARNING - Request failed: https://www.mhc.tn.gov.in/judis | HTTPSConnectionPool(host='www.mhc.tn.gov.in', port=443): Max retries exceeded with url: /judis?year=2018 (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1007)')))
+2026-01-29 11:04:34,188 - ERROR - Failed year 2018 for madras
+2026-01-29 11:04:34,220 - WARNING - Request failed: https://www.mhc.tn.gov.in/judis | HTTPSConnectionPool(host='www.mhc.tn.gov.in', port=443): Max retries exceeded with url: /judis?year=2019 (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1007)')))
+2026-01-29 11:04:34,220 - ERROR - Failed year 2019 for madras
+2026-01-29 11:04:34,255 - WARNING - Request failed: https://www.mhc.tn.gov.in/judis | HTTPSConnectionPool(host='www.mhc.tn.gov.in', port=443): Max retries exceeded with url: /judis?year=2020 (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1007)')))
+2026-01-29 11:04:34,255 - ERROR - Failed year 2020 for madras
+2026-01-29 11:04:34,300 - WARNING - Request failed: https://www.mhc.tn.gov.in/judis | HTTPSConnectionPool(host='www.mhc.tn.gov.in', port=443): Max retries exceeded with url: /judis?year=2021 (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1007)')))
+2026-01-29 11:04:34,300 - ERROR - Failed year 2021 for madras
+2026-01-29 11:04:34,327 - WARNING - Request failed: https://www.mhc.tn.gov.in/judis | HTTPSConnectionPool(host='www.mhc.tn.gov.in', port=443): Max retries exceeded with url: /judis?year=2022 (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1007)')))
+2026-01-29 11:04:34,327 - ERROR - Failed year 2022 for madras
+2026-01-29 11:04:34,360 - WARNING - Request failed: https://www.mhc.tn.gov.in/judis | HTTPSConnectionPool(host='www.mhc.tn.gov.in', port=443): Max retries exceeded with url: /judis?year=2023 (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1007)')))
+2026-01-29 11:04:34,360 - ERROR - Failed year 2023 for madras
+2026-01-29 11:04:34,390 - WARNING - Request failed: https://www.mhc.tn.gov.in/judis | HTTPSConnectionPool(host='www.mhc.tn.gov.in', port=443): Max retries exceeded with url: /judis?year=2024 (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1007)')))
+2026-01-29 11:04:34,390 - ERROR - Failed year 2024 for madras
+2026-01-29 11:04:34,515 - WARNING - Request failed: https://highcourtofkerala.nic.in/judgments | HTTPSConnectionPool(host='highcourtofkerala.nic.in', port=443): Max retries exceeded with url: /judgments?year=2000 (Caused by NameResolutionError("HTTPSConnection(host='highcourtofkerala.nic.in', port=443): Failed to resolve 'highcourtofkerala.nic.in' ([Errno 11001] getaddrinfo failed)"))
+2026-01-29 11:04:34,515 - ERROR - Failed year 2000 for kerala
+2026-01-29 11:04:34,523 - WARNING - Request failed: https://highcourtofkerala.nic.in/judgments | HTTPSConnectionPool(host='highcourtofkerala.nic.in', port=443): Max retries exceeded with url: /judgments?year=2001 (Caused by NameResolutionError("HTTPSConnection(host='highcourtofkerala.nic.in', port=443): Failed to resolve 'highcourtofkerala.nic.in' ([Errno 11001] getaddrinfo failed)"))
+2026-01-29 11:04:34,523 - ERROR - Failed year 2001 for kerala
+2026-01-29 11:04:34,531 - WARNING - Request failed: https://highcourtofkerala.nic.in/judgments | HTTPSConnectionPool(host='highcourtofkerala.nic.in', port=443): Max retries exceeded with url: /judgments?year=2002 (Caused by NameResolutionError("HTTPSConnection(host='highcourtofkerala.nic.in', port=443): Failed to resolve 'highcourtofkerala.nic.in' ([Errno 11001] getaddrinfo failed)"))
+2026-01-29 11:04:34,531 - ERROR - Failed year 2002 for kerala
+2026-01-29 11:04:34,531 - WARNING - Request failed: https://highcourtofkerala.nic.in/judgments | HTTPSConnectionPool(host='highcourtofkerala.nic.in', port=443): Max retries exceeded with url: /judgments?year=2003 (Caused by NameResolutionError("HTTPSConnection(host='highcourtofkerala.nic.in', port=443): Failed to resolve 'highcourtofkerala.nic.in' ([Errno 11001] getaddrinfo failed)"))
+2026-01-29 11:04:34,531 - ERROR - Failed year 2003 for kerala
+2026-01-29 11:04:34,531 - WARNING - Request failed: https://highcourtofkerala.nic.in/judgments | HTTPSConnectionPool(host='highcourtofkerala.nic.in', port=443): Max retries exceeded with url: /judgments?year=2004 (Caused by NameResolutionError("HTTPSConnection(host='highcourtofkerala.nic.in', port=443): Failed to resolve 'highcourtofkerala.nic.in' ([Errno 11001] getaddrinfo failed)"))
+2026-01-29 11:04:34,531 - ERROR - Failed year 2004 for kerala
+2026-01-29 11:04:34,540 - WARNING - Request failed: https://highcourtofkerala.nic.in/judgments | HTTPSConnectionPool(host='highcourtofkerala.nic.in', port=443): Max retries exceeded with url: /judgments?year=2005 (Caused by NameResolutionError("HTTPSConnection(host='highcourtofkerala.nic.in', port=443): Failed to resolve 'highcourtofkerala.nic.in' ([Errno 11001] getaddrinfo failed)"))
+2026-01-29 11:04:34,540 - ERROR - Failed year 2005 for kerala
+2026-01-29 11:04:34,540 - WARNING - Request failed: https://highcourtofkerala.nic.in/judgments | HTTPSConnectionPool(host='highcourtofkerala.nic.in', port=443): Max retries exceeded with url: /judgments?year=2006 (Caused by NameResolutionError("HTTPSConnection(host='highcourtofkerala.nic.in', port=443): Failed to resolve 'highcourtofkerala.nic.in' ([Errno 11001] getaddrinfo failed)"))
+2026-01-29 11:04:34,540 - ERROR - Failed year 2006 for kerala
+2026-01-29 11:04:34,550 - WARNING - Request failed: https://highcourtofkerala.nic.in/judgments | HTTPSConnectionPool(host='highcourtofkerala.nic.in', port=443): Max retries exceeded with url: /judgments?year=2007 (Caused by NameResolutionError("HTTPSConnection(host='highcourtofkerala.nic.in', port=443): Failed to resolve 'highcourtofkerala.nic.in' ([Errno 11001] getaddrinfo failed)"))
+2026-01-29 11:04:34,550 - ERROR - Failed year 2007 for kerala
+2026-01-29 11:04:34,550 - WARNING - Request failed: https://highcourtofkerala.nic.in/judgments | HTTPSConnectionPool(host='highcourtofkerala.nic.in', port=443): Max retries exceeded with url: /judgments?year=2008 (Caused by NameResolutionError("HTTPSConnection(host='highcourtofkerala.nic.in', port=443): Failed to resolve 'highcourtofkerala.nic.in' ([Errno 11001] getaddrinfo failed)"))
+2026-01-29 11:04:34,550 - ERROR - Failed year 2008 for kerala
+2026-01-29 11:04:34,550 - WARNING - Request failed: https://highcourtofkerala.nic.in/judgments | HTTPSConnectionPool(host='highcourtofkerala.nic.in', port=443): Max retries exceeded with url: /judgments?year=2009 (Caused by NameResolutionError("HTTPSConnection(host='highcourtofkerala.nic.in', port=443): Failed to resolve 'highcourtofkerala.nic.in' ([Errno 11001] getaddrinfo failed)"))
+2026-01-29 11:04:34,550 - ERROR - Failed year 2009 for kerala
+2026-01-29 11:04:34,550 - WARNING - Request failed: https://highcourtofkerala.nic.in/judgments | HTTPSConnectionPool(host='highcourtofkerala.nic.in', port=443): Max retries exceeded with url: /judgments?year=2010 (Caused by NameResolutionError("HTTPSConnection(host='highcourtofkerala.nic.in', port=443): Failed to resolve 'highcourtofkerala.nic.in' ([Errno 11001] getaddrinfo failed)"))
+2026-01-29 11:04:34,550 - ERROR - Failed year 2010 for kerala
+2026-01-29 11:04:34,550 - WARNING - Request failed: https://highcourtofkerala.nic.in/judgments | HTTPSConnectionPool(host='highcourtofkerala.nic.in', port=443): Max retries exceeded with url: /judgments?year=2011 (Caused by NameResolutionError("HTTPSConnection(host='highcourtofkerala.nic.in', port=443): Failed to resolve 'highcourtofkerala.nic.in' ([Errno 11001] getaddrinfo failed)"))
+2026-01-29 11:04:34,550 - ERROR - Failed year 2011 for kerala
+2026-01-29 11:04:34,559 - WARNING - Request failed: https://highcourtofkerala.nic.in/judgments | HTTPSConnectionPool(host='highcourtofkerala.nic.in', port=443): Max retries exceeded with url: /judgments?year=2012 (Caused by NameResolutionError("HTTPSConnection(host='highcourtofkerala.nic.in', port=443): Failed to resolve 'highcourtofkerala.nic.in' ([Errno 11001] getaddrinfo failed)"))
+2026-01-29 11:04:34,559 - ERROR - Failed year 2012 for kerala
+2026-01-29 11:04:34,559 - WARNING - Request failed: https://highcourtofkerala.nic.in/judgments | HTTPSConnectionPool(host='highcourtofkerala.nic.in', port=443): Max retries exceeded with url: /judgments?year=2013 (Caused by NameResolutionError("HTTPSConnection(host='highcourtofkerala.nic.in', port=443): Failed to resolve 'highcourtofkerala.nic.in' ([Errno 11001] getaddrinfo failed)"))
+2026-01-29 11:04:34,559 - ERROR - Failed year 2013 for kerala
+2026-01-29 11:04:34,559 - WARNING - Request failed: https://highcourtofkerala.nic.in/judgments | HTTPSConnectionPool(host='highcourtofkerala.nic.in', port=443): Max retries exceeded with url: /judgments?year=2014 (Caused by NameResolutionError("HTTPSConnection(host='highcourtofkerala.nic.in', port=443): Failed to resolve 'highcourtofkerala.nic.in' ([Errno 11001] getaddrinfo failed)"))
+2026-01-29 11:04:34,559 - ERROR - Failed year 2014 for kerala
+2026-01-29 11:04:34,563 - WARNING - Request failed: https://highcourtofkerala.nic.in/judgments | HTTPSConnectionPool(host='highcourtofkerala.nic.in', port=443): Max retries exceeded with url: /judgments?year=2015 (Caused by NameResolutionError("HTTPSConnection(host='highcourtofkerala.nic.in', port=443): Failed to resolve 'highcourtofkerala.nic.in' ([Errno 11001] getaddrinfo failed)"))
+2026-01-29 11:04:34,563 - ERROR - Failed year 2015 for kerala
+2026-01-29 11:04:34,563 - WARNING - Request failed: https://highcourtofkerala.nic.in/judgments | HTTPSConnectionPool(host='highcourtofkerala.nic.in', port=443): Max retries exceeded with url: /judgments?year=2016 (Caused by NameResolutionError("HTTPSConnection(host='highcourtofkerala.nic.in', port=443): Failed to resolve 'highcourtofkerala.nic.in' ([Errno 11001] getaddrinfo failed)"))
+2026-01-29 11:04:34,563 - ERROR - Failed year 2016 for kerala
+2026-01-29 11:04:34,563 - WARNING - Request failed: https://highcourtofkerala.nic.in/judgments | HTTPSConnectionPool(host='highcourtofkerala.nic.in', port=443): Max retries exceeded with url: /judgments?year=2017 (Caused by NameResolutionError("HTTPSConnection(host='highcourtofkerala.nic.in', port=443): Failed to resolve 'highcourtofkerala.nic.in' ([Errno 11001] getaddrinfo failed)"))
+2026-01-29 11:04:34,563 - ERROR - Failed year 2017 for kerala
+2026-01-29 11:04:34,563 - WARNING - Request failed: https://highcourtofkerala.nic.in/judgments | HTTPSConnectionPool(host='highcourtofkerala.nic.in', port=443): Max retries exceeded with url: /judgments?year=2018 (Caused by NameResolutionError("HTTPSConnection(host='highcourtofkerala.nic.in', port=443): Failed to resolve 'highcourtofkerala.nic.in' ([Errno 11001] getaddrinfo failed)"))
+2026-01-29 11:04:34,563 - ERROR - Failed year 2018 for kerala
+2026-01-29 11:04:34,563 - WARNING - Request failed: https://highcourtofkerala.nic.in/judgments | HTTPSConnectionPool(host='highcourtofkerala.nic.in', port=443): Max retries exceeded with url: /judgments?year=2019 (Caused by NameResolutionError("HTTPSConnection(host='highcourtofkerala.nic.in', port=443): Failed to resolve 'highcourtofkerala.nic.in' ([Errno 11001] getaddrinfo failed)"))
+2026-01-29 11:04:34,563 - ERROR - Failed year 2019 for kerala
+2026-01-29 11:04:34,563 - WARNING - Request failed: https://highcourtofkerala.nic.in/judgments | HTTPSConnectionPool(host='highcourtofkerala.nic.in', port=443): Max retries exceeded with url: /judgments?year=2020 (Caused by NameResolutionError("HTTPSConnection(host='highcourtofkerala.nic.in', port=443): Failed to resolve 'highcourtofkerala.nic.in' ([Errno 11001] getaddrinfo failed)"))
+2026-01-29 11:04:34,573 - ERROR - Failed year 2020 for kerala
+2026-01-29 11:04:34,573 - WARNING - Request failed: https://highcourtofkerala.nic.in/judgments | HTTPSConnectionPool(host='highcourtofkerala.nic.in', port=443): Max retries exceeded with url: /judgments?year=2021 (Caused by NameResolutionError("HTTPSConnection(host='highcourtofkerala.nic.in', port=443): Failed to resolve 'highcourtofkerala.nic.in' ([Errno 11001] getaddrinfo failed)"))
+2026-01-29 11:04:34,573 - ERROR - Failed year 2021 for kerala
+2026-01-29 11:04:34,573 - WARNING - Request failed: https://highcourtofkerala.nic.in/judgments | HTTPSConnectionPool(host='highcourtofkerala.nic.in', port=443): Max retries exceeded with url: /judgments?year=2022 (Caused by NameResolutionError("HTTPSConnection(host='highcourtofkerala.nic.in', port=443): Failed to resolve 'highcourtofkerala.nic.in' ([Errno 11001] getaddrinfo failed)"))
+2026-01-29 11:04:34,573 - ERROR - Failed year 2022 for kerala
+2026-01-29 11:04:34,573 - WARNING - Request failed: https://highcourtofkerala.nic.in/judgments | HTTPSConnectionPool(host='highcourtofkerala.nic.in', port=443): Max retries exceeded with url: /judgments?year=2023 (Caused by NameResolutionError("HTTPSConnection(host='highcourtofkerala.nic.in', port=443): Failed to resolve 'highcourtofkerala.nic.in' ([Errno 11001] getaddrinfo failed)"))
+2026-01-29 11:04:34,573 - ERROR - Failed year 2023 for kerala
+2026-01-29 11:04:34,582 - WARNING - Request failed: https://highcourtofkerala.nic.in/judgments | HTTPSConnectionPool(host='highcourtofkerala.nic.in', port=443): Max retries exceeded with url: /judgments?year=2024 (Caused by NameResolutionError("HTTPSConnection(host='highcourtofkerala.nic.in', port=443): Failed to resolve 'highcourtofkerala.nic.in' ([Errno 11001] getaddrinfo failed)"))
+2026-01-29 11:04:34,582 - ERROR - Failed year 2024 for kerala
+2026-01-29 11:04:34,582 - INFO - === HC HTML SCRAPE FINISHED ===

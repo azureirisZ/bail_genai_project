@@ -1,7 +1,13 @@
-# ONLY ignore system junk
+﻿.venv/
+data/
+weights/
 __pycache__/
-*.pyc
-venv/
-.env
-.vscode/
-.DS_Store
+*.jsonl
+*.txt
+*.pth
+*.model
+*.dll
+
+database/
+
+database/

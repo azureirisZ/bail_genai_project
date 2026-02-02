@@ -1,0 +1,20 @@
+from huggingface_hub import HfApi
+api = HfApi()
+
+# Replace 'your-username' with your actual Hugging Face username
+username = "your-username" 
+repo_name = "bail-project-raw-data"
+
+# Create the repo if it doesn't exist
+api.create_repo(repo_id=f"{username}/{repo_name}", repo_type="dataset", exist_ok=True)
+
+# Upload the folder
+print("🚀 Uploading raw data to Hugging Face... this may take a while.")
+api.upload_folder(
+    folder_path="data/raw/hc_bulk",
+    repo_id=f"{username}/{repo_name}",
+    repo_type="dataset",
+    path_in_repo="hc_bulk"
+)
+
+print("✅ Upload Complete!")
